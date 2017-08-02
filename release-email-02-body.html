@@ -3,8 +3,8 @@
   <tbody>
     <tr>
       <td>
-        <a href="https://www.gocd.org/?utm_campaign=go_1706&amp;utm_medium=email&amp;utm_source=go_release_email&amp;utm_content=go_website&amp;utm_term=">
-          <img class="full-width-img--img" style="border: none; width: 100%; display: block;" src="https://info.thoughtworks.com/rs/199-QDE-291/images/New-Email-Banner-for-Go-PA.png" alt="The latest version of GoCD, the open source continuous delivery server, is ready for download." width="550" />
+        <a href="https://www.gocd.org/?utm_campaign=go_1708&utm_medium=email&utm_source=go_release_email&utm_content=go_website&utm_term=">
+          <img class="full-width-img--img" style="border: none; width: 100%; display: block;" src="https://info.thoughtworks.com/rs/199-QDE-291/images/gocd_email_header_simplify_cd_optimized.jpg" alt="The latest version of GoCD, the open source continuous delivery server, is ready for download." width="550" />
         </a>
       </td>
     </tr>
@@ -20,7 +20,7 @@
       <td>
         <div class="button-container" style="text-align: left;">
           <div class="button" style="padding: 0px; margin: 0px; font-family: &quot;Open Sans&quot;, &quot;Segoe UI&quot;, Segoe, &quot;Segoe WP&quot;, &quot;Helvetica Neue&quot;, Roboto, &quot;Microsoft YaHei&quot;, &quot;Hiragino Sans GB&quot;, &quot;Hiragino Sans GB W3&quot;, Arial, sans-serif; line-height: normal; text-align: center;">
-            <a style="background-color: #4AD9D9; border: none;border-radius: 0px;color: #eee !important;display: inline-block;font-weight: normal;line-height: 50px;padding: 0px 25px 0px 25px;text-align: center;text-decoration: none; letter-spacing: 2px;" href="https://www.gocd.org/download/?utm_campaign=go_1706&amp;utm_medium=email&amp;utm_source=go_release_email&amp;utm_content=go_download&amp;utm_term=">DOWNLOAD GoCD 17.6</a>
+            <a style="background-color: #4AD9D9; border: none;border-radius: 0px;color: #eee !important;display: inline-block;font-weight: normal;line-height: 50px;padding: 0px 25px 0px 25px;text-align: center;text-decoration: none; letter-spacing: 2px;" href="https://www.gocd.org/download/?utm_campaign=go_1708&utm_medium=email&utm_source=go_release_email&utm_content=go_download&utm_term=">DOWNLOAD GoCD 17.8</a>
           </div>
         </div>
       </td>
@@ -38,47 +38,28 @@
 
         <div class="section" style="margin-bottom: 40px !important">
           <p style="margin: 0 0 10px 0 !important; padding: 0; font-weight: 400 !important; line-height: 25px !important; font-family: Open Sans, Segoe UI, Segoe, Segoe WP, Helvetica Neue, Roboto, Microsoft YaHei, Hiragino Sans GB, Hiragino Sans GB W3, Arial, sans-serif;">
-            <span class="h3" style="color: #292929; font-size: 22px; font-weight: 400; text-transform: uppercase;">Security Update</span>
+            <span class="h3" style="color: #292929; font-size: 22px; font-weight: 400; text-transform: uppercase;">Out of the box 'Pipeline as Code'</span>
           </p>
-          <p>We have released critical security fixes to prevent CSRF, XSS and Session hijacking exploits. </p>
-            <br />
-            <p> <strong>*We highly recommend users to upgrade to keep your GoCD server and agent secure.*</strong> </p>
-            <br />
-            <p>Thanks <a href="https://hackerone.com/4cad?sort_type=latest_disclosable_activity_at&amp;filter=type%3Aall%20from%3A4cad&amp;page=1&amp;range=forever" style="color: #94399E;">4cad</a> for reporting these issues.</p>
-          <p>
-            <br />
-            <sub>
-            If you find a critical security issue in GoCD, please report it to <a href="https://hackerone.com/gocd" style="color: #94399E;">https://hackerone.com/gocd</a>
-          </sub>
-          </p>
+          <p>With this release, GoCD supports <a href="https://docs.gocd.org/current/advanced_usage/pipelines_as_code.html"; style="color: #94399E">Pipeline as code</a>, out of the box. We've bundled the <a href="https://github.com/tomzo/gocd-json-config-plugin" style="color: #94399E;">JSON config repo plugin</a> and the <a href="https://github.com/tomzo/gocd-yaml-config-plugin" style="color: #94399E;">YAML config repo plugin</a> with the GoCD server.</p>
+          <br/> 
+          <p>A shout out to our core contributor Tomasz Sętkowski for maintaining these plugins. </p>
         </div>
 
         <div class="section" style="margin-bottom: 40px !important">
           <p style="margin: 0 0 10px 0 !important; padding: 0; font-weight: 400; font-family: Open Sans, Segoe UI, Segoe, Segoe WP, Helvetica Neue, Roboto, Microsoft YaHei, Hiragino Sans GB, Hiragino Sans GB W3, Arial, sans-serif; line-height: 25px;">
-            <span class="h3" style="color: #333; font-size: 22px; font-weight: 400; text-transform: uppercase;">Feature Improvements</span>
+            <span class="h3" style="color: #333; font-size: 22px; font-weight: 400; text-transform: uppercase;">Amazon ECS Elastic Agent Plugin</span>
           </p>
-          <p>The in-built password file authentication plugin now supports <em>bcrypt</em>. It is recommended that GoCD server administrators migrate <em>SHA1</em> hashed passwords, in the GoCD password file, to <em>bcrypt</em>.</p>
-          <br />
-          <p>We have made some improvements to existing features. We added an option to skip agent startup on windows, improve timestamp rendering (you can now see timestamps in your local timezone on key pages) and added a "Rerun Failed" button to rerun
-            failed jobs.</p>
-          <img src="https://info.thoughtworks.com/rs/199-QDE-291/images/17-6-rerun-failed.png" alt="" width="460" height="201" style="margin-top: 18px; margin-bottom: 18px">
-          <p>We have also made some API enhancements and bug fixes for GoCD. A comprehensive list of changes can be <a href="https://www.gocd.org/releases/#17.6.0?utm_campaign=go_1706&amp;utm_medium=email&amp;utm_source=go_release_email&amp;utm_content=go_release_notes&amp;utm_term=" style="color: #94399E;">found here</a>.</p>
+          <p>ThoughtWorks now offers a <a href="https://extensions-docs.gocd.org/ecs/current/">new commercial elastic agents plugin</a> which allows for flexible use of EC2 instances (with support for ECS Docker containers). To know more, <a href="mailto:support@thoughtworks.com" style="color: #94399E;">get in touch.</a></p>
         </div>
 
         <div class="section" style="margin-bottom: 40px !important">
           <p style="margin: 0 0 10px 0 !important; padding: 0; font-family: Open Sans, Segoe UI, Segoe, Segoe WP, Helvetica Neue, Roboto, Microsoft YaHei, Hiragino Sans GB, Hiragino Sans GB W3, Arial, sans-serif; line-height: normal;">
-            <span class="h3" style="color: #333; font-size: 22px; font-weight: 400; text-transform: uppercase;">LDAP/AD Authorization Commercial Plugin</span>
+            <span class="h3" style="color: #333; font-size: 22px; font-weight: 400; text-transform: uppercase;">Docker Images & Other Improvements</span>
           </p>
-          <p> We have a new LDAP/AD plugin which uses the Authorization Plugin Endpoint. The commercial version of the plugin allows you to grant access to your teams by leveraging your organizations' predefined roles within LDAP/AD. To know more, <a href="https://www.thoughtworks.com/go/#get-started" style="color: #94399E;">get in touch</a>.</p>
-          <br />
-          <p> We have a new LDAP/AD plugin which uses the Authorization Plugin Endpoint. The commercial version of the plugin allows you to grant access to your teams by leveraging your organizations' predefined roles within LDAP/AD. To know more, <a href="https://www.thoughtworks.com/go/#get-started" style="color: #94399E;">get in touch</a>.</p>
-        </div>
-
-        <div class="section" style="margin-bottom: 40px !important">
-          <p style="margin: 0 0 10px 0 !important; padding: 0; font-family: Open Sans, Segoe UI, Segoe, Segoe WP, Helvetica Neue, Roboto, Microsoft YaHei, Hiragino Sans GB, Hiragino Sans GB W3, Arial, sans-serif; line-height: normal;">
-            <span class="h3" style="color: #333; font-size: 22px; font-weight: 400; text-transform: uppercase;">Breaking Changes</span>
+          <p>We have made changes to reduce the size of the docker <a href="https://hub.docker.com/r/gocd/gocd-server/" style="color: #94399E;">GoCD Server</a> and GoCD Agent images. We have also made some minor improvements for GoCD.</p>
+          <br/>
+          <p> A comprehensive list of changes can be <a href="https://www.gocd.org/releases/#17.8.0?utm_campaign=go_1708&utm_medium=email&utm_source=go_release_email&utm_content=go_release_notes&utm_term=" style="color: #94399E;">found here</a>.
           </p>
-          <p>Version 1 of the <a href="https://api.gocd.org/current/#environment-config" style="color: #94399E;">Environment Config API</a> was deprecated in 17.3. Version 2 of the API is available, and users are encouraged to use it.</p>
         </div>
 
         <div class="section" style="margin-bottom: 40px !important">
@@ -87,9 +68,10 @@
           </p>
           <p>These are a list of features that have been deprecated on GoCD along with the timeframe of when they will be removed completely.</p>
           <ul>
-            <li style="font-family: Open Sans, Segoe UI, Segoe, Segoe WP, Helvetica Neue, Roboto, Microsoft YaHei, Hiragino Sans GB, Hiragino Sans GB W3, Arial, sans-serif;list-style: none;border: 1px solid;border-color: #4AD9D9;padding: 12px;margin-bottom: 16px;margin-left: -40px;">Support for in-built password file and LDAP/AD authentication have been deprecated as of 17.5.0. Your configuration will automatically be updated to use the newly bundled file and ldap plugins.</li>
-            <li style="font-family: Open Sans, Segoe UI, Segoe, Segoe WP, Helvetica Neue, Roboto, Microsoft YaHei, Hiragino Sans GB, Hiragino Sans GB W3, Arial, sans-serif;list-style: none;border: 1px solid;border-color: #4AD9D9;padding: 12px;margin-bottom: 16px;margin-left: -40px;">Going forward, all the existing functionality provided by the Authentication Plugin will be handled by the new Authorization Plugin endpoints. Plugin developers are encouraged to migrate their plugins to use the new Authorization Plugins.
-              The Authentication plugin has been deprecated as of 17.5.0 and we'd stop supporting it in 18.1 (scheduled to be release in January 2018). </li>
+            <li style="font-family: Open Sans, Segoe UI, Segoe, Segoe WP, Helvetica Neue, Roboto, Microsoft YaHei, Hiragino Sans GB, Hiragino Sans GB W3, Arial, sans-serif;list-style: none;border: 1px solid;border-color: #4AD9D9;padding: 12px;margin-bottom: 16px;margin-left: -40px;">As of 17.5, support for in-built password file and LDAP/AD authentication have been deprecated. Support for these authentication mechanisms will be removed in the 17.9 release (scheduled for September 2017).</li>
+            <li style="font-family: Open Sans, Segoe UI, Segoe, Segoe WP, Helvetica Neue, Roboto, Microsoft YaHei, Hiragino Sans GB, Hiragino Sans GB W3, Arial, sans-serif;list-style: none;border: 1px solid;border-color: #4AD9D9;padding: 12px;margin-bottom: 16px;margin-left: -40px;">Going forward, all the existing functionality provided by the Authentication Plugin will be handled by the <a href="https://plugin-api.gocd.org/current/authorization/" style="color: #94399E;">new Authorization Plugin</a> endpoints. Plugin developers are encouraged to migrate their plugins to use the new Authorization Plugins. Support for the plugin will be discontinued from version 18.1 (scheduled to be release in January 2018).</li>
+            <li style="font-family: Open Sans, Segoe UI, Segoe, Segoe WP, Helvetica Neue, Roboto, Microsoft YaHei, Hiragino Sans GB, Hiragino Sans GB W3, Arial, sans-serif;list-style: none;border: 1px solid;border-color: #4AD9D9;padding: 12px;margin-bottom: 16px;margin-left: -40px;">As of 17.8, the phusion based docker server and agent images are deprecated in favour of the new docker server and agent images. Support for the phusion images will be removed in 17.11.0. We provide support for the docker images for GoCD agents across the following operating systems - Alpine 3.5, CentOS 6 & 7 , Debian 7 & 8, Ubuntu 12.04, 14.04 & 16.04.</li>
+
           </ul>
         </div>
 
@@ -97,7 +79,7 @@
           <p style="margin: 0 0 10px 0 !important; padding: 0; font-family: Open Sans, Segoe UI, Segoe, Segoe WP, Helvetica Neue, Roboto, Microsoft YaHei, Hiragino Sans GB, Hiragino Sans GB W3, Arial, sans-serif; line-height: normal">
             <span class="h3" style="color: #333; font-size: 22px; font-weight: 400; text-transform: uppercase;">We love our contributors!</span>
           </p>
-          <p>Thank you Ankit Srivastava, Bhupendrakumar Piprava, Drew Sonne, Jyoti Singh, Kerry Wilson, Ketan Padegaonkar, Lubaina R, Mahesh Panchaksharaiah, Naveen Bhaskar, Rajiesh N, Sean Escriva, Stephen Murby and Varsha Varadarajan</p>
+          <p>Thank you Ankit Srivastava, Ankur K, Bhupendrakumar Piprava, Emily Luke, Huimin Li, Isabelle Carter, Jyoti Singh, Ketan Padegaonkar, Kyle Olivo, Louda Peña, Lubaina R, Mahesh Panchaksharaiah, Marques Lee, Naveen Bhaskar, Rajiesh N, Senthil R, Suzie Prince, Tomasz Sętkowski, Varsha Varadarajan and Victor Nascimento.</p>
           <br />
           <p>A shout out to the <a href="https://hackerone.com/gocd/thanks" style="color: #94399E;">security researchers on hackerone</a> for contributing!</p>
         </div>
@@ -118,7 +100,7 @@
 
         <div class="button-container" style="text-align: left;">
           <div class="button" style="padding: 25px; margin: 20px; font-family: &quot;Open Sans&quot;, &quot;Segoe UI&quot;, Segoe, &quot;Segoe WP&quot;, &quot;Helvetica Neue&quot;, Roboto, &quot;Microsoft YaHei&quot;, &quot;Hiragino Sans GB&quot;, &quot;Hiragino Sans GB W3&quot;, Arial, sans-serif; line-height: normal; text-align: center;">
-            <a style="background-color: #4AD9D9; border: none;border-radius: 0px;color: #eee !important;display: inline-block;font-weight: normal;line-height: 50px;padding: 0px 25px 0px 25px; margin: 50px; text-align: center;text-decoration: none; letter-spacing: 2px;" href="https://www.gocd.org/download/?utm_campaign=go_1706&amp;utm_medium=email&amp;utm_source=go_release_email&amp;utm_content=go_download&amp;utm_term=">DOWNLOAD GoCD 17.6</a>
+            <a style="background-color: #4AD9D9; border: none;border-radius: 0px;color: #eee !important;display: inline-block;font-weight: normal;line-height: 50px;padding: 0px 25px 0px 25px; margin: 50px; text-align: center;text-decoration: none; letter-spacing: 2px;" href="https://www.gocd.org/download/?utm_campaign=go_1708&utm_medium=email&utm_source=go_release_email&utm_content=go_download&utm_term=">DOWNLOAD GoCD 17.8</a>
           </div>
         </div>
       </td>

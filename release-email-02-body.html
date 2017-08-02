@@ -40,7 +40,7 @@
           <p style="margin: 0 0 10px 0 !important; padding: 0; font-weight: 400 !important; line-height: 25px !important; font-family: Open Sans, Segoe UI, Segoe, Segoe WP, Helvetica Neue, Roboto, Microsoft YaHei, Hiragino Sans GB, Hiragino Sans GB W3, Arial, sans-serif;">
             <span class="h3" style="color: #292929; font-size: 22px; font-weight: 400; text-transform: uppercase;">Out of the box 'Pipeline as Code'</span>
           </p>
-          <p>With this release, GoCD supports <a href="https://docs.gocd.org/current/advanced_usage/pipelines_as_code.html" style="color: #94399E;">Pipeline as code</a>, out of the box. We've bundled the <a href="https://github.com/tomzo/gocd-json-config-plugin" style="color: #94399E;">JSON config repo plugin</a> and the <a href="https://github.com/tomzo/gocd-yaml-config-plugin" style="color: #94399E;">YAML config repo plugin</a> with the GoCD server.</p>
+          <p>With this release, GoCD supports <a href="https://docs.gocd.org/current/advanced_usage/pipelines_as_code.html" style="color:#94399E">Pipeline as code</a>, out of the box. We've bundled the <a href="https://github.com/tomzo/gocd-json-config-plugin" style="color: #94399E;">JSON config repo plugin</a> and the <a href="https://github.com/tomzo/gocd-yaml-config-plugin" style="color: #94399E;">YAML config repo plugin</a> with the GoCD server.</p>
           <br/> 
           <p>A shout out to our core contributor Tomasz Sętkowski for maintaining these plugins. </p>
         </div>
@@ -54,11 +54,11 @@
 
         <div class="section" style="margin-bottom: 40px !important">
           <p style="margin: 0 0 10px 0 !important; padding: 0; font-family: Open Sans, Segoe UI, Segoe, Segoe WP, Helvetica Neue, Roboto, Microsoft YaHei, Hiragino Sans GB, Hiragino Sans GB W3, Arial, sans-serif; line-height: normal;">
-            <span class="h3" style="color: #333; font-size: 22px; font-weight: 400; text-transform: uppercase;">Docker Images & Other Improvements</span>
+            <span class="h3" style="color: #333; font-size: 22px; font-weight: 400; text-transform: uppercase;">Docker Images</span>
           </p>
-          <p>We have made changes to reduce the size of the docker <a href="https://hub.docker.com/r/gocd/gocd-server/" style="color: #94399E;">GoCD Server</a> and GoCD Agent images. We have also made some minor improvements for GoCD.</p>
+          <p>We have made changes to reduce the size of the docker <a href="https://hub.docker.com/r/gocd/gocd-server/" style="color: #94399E;">GoCD Server</a> and GoCD Agent images.</p>
           <br/>
-          <p> A comprehensive list of changes can be <a href="https://www.gocd.org/releases/#17.8.0?utm_campaign=go_1708&utm_medium=email&utm_source=go_release_email&utm_content=go_release_notes&utm_term=" style="color: #94399E;">found here</a>.
+          <p> We have also made some minor improvements for GoCD. A comprehensive list of changes can be <a href="https://www.gocd.org/releases/#17.8.0?utm_campaign=go_1708&utm_medium=email&utm_source=go_release_email&utm_content=go_release_notes&utm_term=" style="color: #94399E;">found here</a>.
           </p>
         </div>
 
@@ -66,10 +66,10 @@
           <p style="margin: 0 0 10px 0 !important; padding: 0; font-family: Open Sans, Segoe UI, Segoe, Segoe WP, Helvetica Neue, Roboto, Microsoft YaHei, Hiragino Sans GB, Hiragino Sans GB W3, Arial, sans-serif; line-height: normal;">
             <span class="h3" style="color: #333; font-size: 22px; font-weight: 400; text-transform: uppercase;">Deprecations</span>
           </p>
-          <p>These are a list of features that have been deprecated on GoCD along with the timeframe of when they will be removed completely.</p>
+          <p>These are a list of features that have been deprecated on GoCD along with the timeframe of their removal.</p>
           <ul>
             <li style="font-family: Open Sans, Segoe UI, Segoe, Segoe WP, Helvetica Neue, Roboto, Microsoft YaHei, Hiragino Sans GB, Hiragino Sans GB W3, Arial, sans-serif;list-style: none;border: 1px solid;border-color: #4AD9D9;padding: 12px;margin-bottom: 16px;margin-left: -40px;">As of 17.5, support for in-built password file and LDAP/AD authentication have been deprecated. Support for these authentication mechanisms will be removed in the 17.9 release (scheduled for September 2017).</li>
-            <li style="font-family: Open Sans, Segoe UI, Segoe, Segoe WP, Helvetica Neue, Roboto, Microsoft YaHei, Hiragino Sans GB, Hiragino Sans GB W3, Arial, sans-serif;list-style: none;border: 1px solid;border-color: #4AD9D9;padding: 12px;margin-bottom: 16px;margin-left: -40px;">Going forward, all the existing functionality provided by the Authentication Plugin will be handled by the <a href="https://plugin-api.gocd.org/current/authorization/" style="color: #94399E;">new Authorization Plugin</a> endpoints. Plugin developers are encouraged to migrate their plugins to use the new Authorization Plugins. Support for the plugin will be discontinued from version 18.1 (scheduled to be release in January 2018).</li>
+            <li style="font-family: Open Sans, Segoe UI, Segoe, Segoe WP, Helvetica Neue, Roboto, Microsoft YaHei, Hiragino Sans GB, Hiragino Sans GB W3, Arial, sans-serif;list-style: none;border: 1px solid;border-color: #4AD9D9;padding: 12px;margin-bottom: 16px;margin-left: -40px;">Going forward, all the existing functionality provided by the Authentication Plugin endpoints will be handled by the <a href="https://plugin-api.gocd.org/current/authorization/" style="color: #94399E;">new Authorization Plugin</a> endpoints. Plugin developers are encouraged to migrate their plugins to use the new Authorization Plugins. Support for the endpoint will be discontinued from version 18.1 (scheduled to be release in January 2018).</li>
             <li style="font-family: Open Sans, Segoe UI, Segoe, Segoe WP, Helvetica Neue, Roboto, Microsoft YaHei, Hiragino Sans GB, Hiragino Sans GB W3, Arial, sans-serif;list-style: none;border: 1px solid;border-color: #4AD9D9;padding: 12px;margin-bottom: 16px;margin-left: -40px;">As of 17.8, the phusion based docker server and agent images are deprecated in favour of the new docker server and agent images. Support for the phusion images will be removed in 17.11.0. We provide support for the docker images for GoCD agents across the following operating systems - Alpine 3.5, CentOS 6 & 7 , Debian 7 & 8, Ubuntu 12.04, 14.04 & 16.04.</li>
 
           </ul>

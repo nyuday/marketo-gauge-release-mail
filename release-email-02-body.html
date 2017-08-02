@@ -31,7 +31,7 @@
 
 
 <!-- Start: Body -->
-<table class="single-column" style="padding: 20px; border-collapse: separate; min-width: 100%; font-weight: 400" cellspacing="0" cellpadding="0" width="100%">
+<table class="single-column" style="padding: 20px 20px 0 20px ; border-collapse: separate; min-width: 100%; font-weight: 400" cellspacing="0" cellpadding="0" width="100%">
   <tbody>
     <tr>
       <td>
@@ -67,11 +67,10 @@
             <span class="h3" style="color: #333; font-size: 22px; font-weight: 400; text-transform: uppercase;">Deprecations</span>
           </p>
           <p>These are a list of features that have been deprecated on GoCD along with the timeframe of their removal.</p>
-          <ul>
-            <li style="font-family: Open Sans, Segoe UI, Segoe, Segoe WP, Helvetica Neue, Roboto, Microsoft YaHei, Hiragino Sans GB, Hiragino Sans GB W3, Arial, sans-serif;list-style: none;border: 1px solid;border-color: #4AD9D9;padding: 12px;margin-bottom: 16px;margin-left: -40px;">As of 17.5, support for in-built password file and LDAP/AD authentication have been deprecated. Support for these authentication mechanisms will be removed in the 17.9 release (scheduled for September 2017).</li>
-            <li style="font-family: Open Sans, Segoe UI, Segoe, Segoe WP, Helvetica Neue, Roboto, Microsoft YaHei, Hiragino Sans GB, Hiragino Sans GB W3, Arial, sans-serif;list-style: none;border: 1px solid;border-color: #4AD9D9;padding: 12px;margin-bottom: 16px;margin-left: -40px;">Going forward, all the existing functionality provided by the Authentication Plugin endpoints will be handled by the <a href="https://plugin-api.gocd.org/current/authorization/" style="color: #94399E;">new Authorization Plugin</a> endpoints. Plugin developers are encouraged to migrate their plugins to use the new Authorization Plugins. Support for the endpoint will be discontinued from version 18.1 (scheduled to be release in January 2018).</li>
-            <li style="font-family: Open Sans, Segoe UI, Segoe, Segoe WP, Helvetica Neue, Roboto, Microsoft YaHei, Hiragino Sans GB, Hiragino Sans GB W3, Arial, sans-serif;list-style: none;border: 1px solid;border-color: #4AD9D9;padding: 12px;margin-bottom: 16px;margin-left: -40px;">As of 17.8, the phusion based docker server and agent images are deprecated in favour of the new docker server and agent images. Support for the phusion images will be removed in 17.11.0. We provide support for the docker images for GoCD agents across the following operating systems - Alpine 3.5, CentOS 6 & 7 , Debian 7 & 8, Ubuntu 12.04, 14.04 & 16.04.</li>
-
+          <ul style="padding-left: 0px">
+            <li style="font-family: Open Sans, Segoe UI, Segoe, Segoe WP, Helvetica Neue, Roboto, Microsoft YaHei, Hiragino Sans GB, Hiragino Sans GB W3, Arial, sans-serif;list-style: none;border: 1px solid;border-color: #4AD9D9;padding: 12px;margin-bottom: 16px;margin-left: 0px;">As of 17.5, support for in-built password file and LDAP/AD authentication have been deprecated. Support for these authentication mechanisms will be removed in the 17.9 release (scheduled for September 2017).</li>
+            <li style="font-family: Open Sans, Segoe UI, Segoe, Segoe WP, Helvetica Neue, Roboto, Microsoft YaHei, Hiragino Sans GB, Hiragino Sans GB W3, Arial, sans-serif;list-style: none;border: 1px solid;border-color: #4AD9D9;padding: 12px;margin-bottom: 16px;margin-left: 0px;">Going forward, all the existing functionality provided by the Authentication Plugin endpoints will be handled by the <a href="https://plugin-api.gocd.org/current/authorization/" style="color: #94399E;">new Authorization Plugin</a> endpoints. Plugin developers are encouraged to migrate their plugins to use the new Authorization Plugins. Support for the endpoint will be discontinued from version 18.1 (scheduled to be release in January 2018).</li>
+            <li style="font-family: Open Sans, Segoe UI, Segoe, Segoe WP, Helvetica Neue, Roboto, Microsoft YaHei, Hiragino Sans GB, Hiragino Sans GB W3, Arial, sans-serif;list-style: none;border: 1px solid;border-color: #4AD9D9;padding: 12px;margin-bottom: 16px;margin-left: 0px;">As of 17.8, the phusion based docker server and agent images are deprecated in favour of the new docker server and agent images. Support for the phusion images will be removed in 17.11.0. We provide support for the docker images for GoCD agents across the following operating systems - Alpine 3.5, CentOS 6 & 7 , Debian 7 & 8, Ubuntu 12.04, 14.04 & 16.04.</li>
           </ul>
         </div>
 
@@ -88,8 +87,8 @@
 
         <div class="h3" style="color: #444;font-size: 18px;margin: 0 20px 20px 20px !important;text-align: center;border-top: 2px #4AD9D9;border-bottom: 2px #4AD9D9;padding: 10px 0 !important;">
           <p><strong>Want to contribute? Need help getting started?</strong></p>
-          <br />
-          <p>We&rsquo;re here to help: <a href="mailto:support@thoughtworks.com" style="color: #94399E;">support@thoughtworks.com</a>.</p> 
+          <div style= "height: 16px"> </div>
+          <p>We&rsquo;re here to help: <a href="mailto:support@thoughtworks.com" style="color: #94399E;">support@thoughtworks.com</a>.</p>
         </div>
           
         <hr style="height:2px; border:none; color:#4AD9D9; background-color: #4AD9D9">
@@ -103,8 +102,11 @@
             <a style="background-color: #4AD9D9; border: none;border-radius: 0px;color: #eee !important;display: inline-block;font-weight: normal;line-height: 50px;padding: 0px 25px 0px 25px; margin: 50px; text-align: center;text-decoration: none; letter-spacing: 2px;" href="https://www.gocd.org/download/?utm_campaign=go_1708&utm_medium=email&utm_source=go_release_email&utm_content=go_download&utm_term=">DOWNLOAD GoCD 17.8</a>
           </div>
         </div>
+        <hr style="height:1px; margin: 20px 0; border:none; background-color: #999999">
+
       </td>
     </tr>
   </tbody>
 </table>
+
 <!-- End: Body -->

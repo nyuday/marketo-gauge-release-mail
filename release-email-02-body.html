@@ -49,18 +49,6 @@
         </div>
 
         <div class="section" style="margin-bottom: 40px !important">
-          <p style="margin: 0 0 10px 0 !important; padding: 0; font-weight: 400; font-family: Open Sans, Segoe UI, Segoe, Segoe WP, Helvetica Neue, Roboto, Microsoft YaHei, Hiragino Sans GB, Hiragino Sans GB W3, Arial, sans-serif; line-height: 25px;">
-            <span class="h3" style="color: #333; font-size: 22px; font-weight: 400; text-transform: uppercase;">Bux Fixes</span>
-          </p>
-          <p>We've also made several bug fixes including removing memory leaks from agent bootstrapper. 
-              <ul style="padding-left: 0px">
-              <li style="font-family: Open Sans, Segoe UI, Segoe, Segoe WP, Helvetica Neue, Roboto, Microsoft YaHei, Hiragino Sans GB, Hiragino Sans GB W3, Arial, sans-serif;list-style: none;border: 1px solid;border-color: #4AD9D9;padding: 12px;margin-bottom: 16px;margin-left: 0px;">There were some file system resource and memory leaks that have been identified which affect versions of go-agent bootstrapper between 17.4 and 17.8. We recommend that users either upgrade their gocd server and agent versions to the latest version, or restart the agent process to release any memory and filesystem resources that may be locked by the agent process.</li>
-          </ul>
-        </p>    
-           
-        </div>
-
-        <div class="section" style="margin-bottom: 40px !important">
           <p style="margin: 0 0 10px 0 !important; padding: 0; font-family: Open Sans, Segoe UI, Segoe, Segoe WP, Helvetica Neue, Roboto, Microsoft YaHei, Hiragino Sans GB, Hiragino Sans GB W3, Arial, sans-serif; line-height: normal;">
             <span class="h3" style="color: #333; font-size: 22px; font-weight: 400; text-transform: uppercase;">GoCD and Docker</span>
           </p>
@@ -69,6 +57,26 @@
           <p> We have also made other improvements and bug fixes this release. A comprehensive list of changes can be <a href="https://www.gocd.org/releases/#17.9.0?utm_campaign=go_1709&utm_medium=email&utm_source=go_release_email&utm_content=go_release_notes&utm_term=" style="color: #94399E;">found here</a>.
           </p>
         </div>
+        <div class="section" style="margin-bottom: 40px !important">
+            <p style="margin: 0 0 10px 0 !important; padding: 0; font-weight: 400; font-family: Open Sans, Segoe UI, Segoe, Segoe WP, Helvetica Neue, Roboto, Microsoft YaHei, Hiragino Sans GB, Hiragino Sans GB W3, Arial, sans-serif; line-height: 25px;">
+              <span class="h3" style="color: #333; font-size: 22px; font-weight: 400; text-transform: uppercase;">Bux Fixes</span>
+            </p>
+            <p>We've also made several bug fixes including removing memory leaks from agent bootstrapper. 
+                <ul style="padding-left: 0px">
+                <li style="font-family: Open Sans, Segoe UI, Segoe, Segoe WP, Helvetica Neue, Roboto, Microsoft YaHei, Hiragino Sans GB, Hiragino Sans GB W3, Arial, sans-serif;list-style: none;border: 1px solid;border-color: #4AD9D9;padding: 12px;margin-bottom: 16px;margin-left: 0px;">There were some file system resource and memory leaks that have been identified which affect versions of go-agent bootstrapper between 17.4 and 17.8. We recommend that users either upgrade their gocd server and agent versions to the latest version, or restart the agent process to release any memory and filesystem resources that may be locked by the agent process.</li>
+            </ul>
+          </p>    
+             
+          </div>
+
+          <div class="section" style="margin-bottom: 40px !important">
+              <p style="margin: 0 0 10px 0 !important; padding: 0; font-weight: 400; font-family: Open Sans, Segoe UI, Segoe, Segoe WP, Helvetica Neue, Roboto, Microsoft YaHei, Hiragino Sans GB, Hiragino Sans GB W3, Arial, sans-serif; line-height: 25px;">
+                <span class="h3" style="color: #333; font-size: 22px; font-weight: 400; text-transform: uppercase;">Breaking Change</span>
+              </p>
+              <p>If you are using the commercial Amazon ECS Elastic Agent Plugin, upgrading to GoCD 17.9.0 would require a plugin upgrade to  <a href="https://extensions-docs.gocd.org/ecs/2.0.0/changelog/" style="color: #94399E;">V2.0.0</a>.
+            </p>    
+               
+            </div>
 
         <div class="section" style="margin-bottom: 40px !important">
           <p style="margin: 0 0 10px 0 !important; padding: 0; font-family: Open Sans, Segoe UI, Segoe, Segoe WP, Helvetica Neue, Roboto, Microsoft YaHei, Hiragino Sans GB, Hiragino Sans GB W3, Arial, sans-serif; line-height: normal;">
@@ -81,6 +89,15 @@
             <li style="font-family: Open Sans, Segoe UI, Segoe, Segoe WP, Helvetica Neue, Roboto, Microsoft YaHei, Hiragino Sans GB, Hiragino Sans GB W3, Arial, sans-serif;list-style: none;border: 1px solid;border-color: #4AD9D9;padding: 12px;margin-bottom: 16px;margin-left: 0px;">As of 17.5, support for in-built password file and LDAP/AD authentication have been deprecated. Support for these authentication mechanisms would be removed in 17.10 (scheduled to be in October 2017). Existing configuration will be automatically migrated to use the new in-built password file and LDAP/AD authentication plugins. No other actions necessary.</li>
           </ul>
         </div>
+
+        <div class="section" style="margin-bottom: 40px !important">
+            <p style="margin: 0 0 10px 0 !important; padding: 0; font-weight: 400; font-family: Open Sans, Segoe UI, Segoe, Segoe WP, Helvetica Neue, Roboto, Microsoft YaHei, Hiragino Sans GB, Hiragino Sans GB W3, Arial, sans-serif; line-height: 25px;">
+              <span class="h3" style="color: #333; font-size: 22px; font-weight: 400; text-transform: uppercase;">Update</span>
+            </p>
+            <p>On August 23 2017, Apax Funds announced their acquisition of ThoughtWorks, Inc. <a href="https://www.gocd.org/2017/08/31/apax-acquires-thoughtworks/" style="color: #94399E;">Here's what</a> this news means to the GoCD product, its contributors, and the open source community.
+          </p>    
+             
+          </div>
 
         <div class="section" style="margin-bottom: 40px !important">
           <p style="margin: 0 0 10px 0 !important; padding: 0; font-family: Open Sans, Segoe UI, Segoe, Segoe WP, Helvetica Neue, Roboto, Microsoft YaHei, Hiragino Sans GB, Hiragino Sans GB W3, Arial, sans-serif; line-height: normal">

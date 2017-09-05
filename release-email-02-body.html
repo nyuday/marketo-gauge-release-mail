@@ -43,7 +43,7 @@
           <p>We have created an <a href="https://github.com/gocd/gocd/pull/3772" style="color: #94399E;">organized view</a> of the elastic agent profiles. Now, you can view them by the type of elastic agent plugin (Docker Swarm, OpenStack, ECS etc.), making it easier to find a particular profile.
           </p>
           <br/> 
-          <p>Administrators can now choose to edit a Pipeline with one-click from the Value Stream Map. </p>
+          <p>Administrators can now choose to edit a pipeline with one-click from the Value Stream Map. </p>
           <br/>
           <img src="https://preview.gocd.org/assets/images/releases/17.9.0/edit-pipeline-from-vsm-008fac52.png" width="500px">
         </div>
@@ -53,20 +53,21 @@
             <span class="h3" style="color: #333; font-size: 22px; font-weight: 400">GoCD</span>
             <span class="h3" style="color: #333; font-size: 22px; font-weight: 400; text-transform: uppercase;"> and Docker</span>
           </p>
-          <p>GoCD now sends logs to docker by writing them to STDOUT. Users can access the logs anytime in both server and agent containers. The <a href="https://hub.docker.com/r/gocd/gocd-agent-alpine-3.6/" style="color: #94399E;">GoCD Agent docker image</a> for the latest version of Alpine (3.6) is now available to use. </p> 
-          <br/>
-          <p> We have also made other improvements and bug fixes this release. A comprehensive list of changes can be <a href="https://www.gocd.org/releases/#17.9.0?utm_campaign=go_1709&utm_medium=email&utm_source=go_release_email&utm_content=go_release_notes&utm_term=" style="color: #94399E;">found here</a>.
-          </p>
+          <p>GoCD docker images now send logs to STDOUT. Users can access the logs anytime in both server and agent containers. The <a href="https://hub.docker.com/r/gocd/gocd-agent-alpine-3.6/" style="color: #94399E;">GoCD Agent docker image</a> for the latest version of Alpine (3.6) is now available to use. </p> 
+          
         </div>
         <div class="section" style="margin-bottom: 40px !important">
             <p style="margin: 0 0 10px 0 !important; padding: 0; font-weight: 400; font-family: Open Sans, Segoe UI, Segoe, Segoe WP, Helvetica Neue, Roboto, Microsoft YaHei, Hiragino Sans GB, Hiragino Sans GB W3, Arial, sans-serif; line-height: 25px;">
               <span class="h3" style="color: #333; font-size: 22px; font-weight: 400; text-transform: uppercase;">Bux Fixes</span>
             </p>
-            <p>We've also made several bug fixes including removing memory leaks from agent bootstrapper. 
+            <p>We've made several bug fixes including removing memory leaks from agent bootstrapper. 
                 <ul style="padding-left: 0px">
                 <li style="font-family: Open Sans, Segoe UI, Segoe, Segoe WP, Helvetica Neue, Roboto, Microsoft YaHei, Hiragino Sans GB, Hiragino Sans GB W3, Arial, sans-serif;list-style: none;border: 1px solid;border-color: #4AD9D9;padding: 12px;margin-bottom: 16px;margin-left: 0px;">There were some file system resource and memory leaks that have been identified which affect versions of go-agent bootstrapper between 17.4 and 17.8. We recommend that users either upgrade their gocd server and agent versions to the latest version, or restart the agent process to release any memory and filesystem resources that may be locked by the agent process.</li>
             </ul>
           </p>    
+          <br/>
+          <p> We have also made other improvements, API enhancements and bug fixes this release. A comprehensive list of changes can be <a href="https://www.gocd.org/releases/#17.9.0?utm_campaign=go_1709&utm_medium=email&utm_source=go_release_email&utm_content=go_release_notes&utm_term=" style="color: #94399E;">found here</a>.
+          </p>
              
           </div>
 

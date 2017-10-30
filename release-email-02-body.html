@@ -38,7 +38,7 @@
 
         <div class="section" style="margin-bottom: 40px !important">
           <p style="margin: 0 0 10px 0 !important; padding: 0; font-weight: 400 !important; line-height: 25px !important; font-family: Open Sans, Segoe UI, Segoe, Segoe WP, Helvetica Neue, Roboto, Microsoft YaHei, Hiragino Sans GB, Hiragino Sans GB W3, Arial, sans-serif;">
-            <span class="h3" style="color: #292929; font-size: 22px; font-weight: 400; text-transform: uppercase;">UX Changes  
+            <span class="h3" style="color: #292929; font-size: 22px; font-weight: 400; text-transform: uppercase;">UX Enhancements  
             </span>
           </p>
           <p>We have made it easier to find the Value Stream Map (VSM) for your pipeline. Pipeline instances now have an explict link to VSM across the application for better discoverablity. Also, pipeline run durations are now visible in the VSM. 
@@ -54,12 +54,26 @@
           <p style="margin: 0 0 10px 0 !important; padding: 0; font-family: Open Sans, Segoe UI, Segoe, Segoe WP, Helvetica Neue, Roboto, Microsoft YaHei, Hiragino Sans GB, Hiragino Sans GB W3, Arial, sans-serif; line-height: normal;">
             <span class="h3" style="color: #333; font-size: 22px; font-weight: 400">OTHER CHANGES</span>
           </p>
+          <p>We've made a few improvements to GoCD 17.11 like adding support for bitbucket and gitlab webhooks and support for parameters and template references in config repo pipelines. </p>
+          <br/>
           <p>We've made a few changes to the <a href="https://github.com/gocd/docker-gocd-server/blob/master/CHANGELOG.md" style="color: #94399E;">GoCD Server</a> and the <a href="https://github.com/gocd/docker-gocd-agent/blob/master/CHANGELOG.md" style="color: #94399E;">GoCD Agent</a> Docker images.</p> 
           <br/>
-          <p>We have also made several improvements, bug fixes, API and performance enhancements. A more comprehensive list of changes can be found in our <a href="https://www.gocd.org/releases/#17.11.0?utm_campaign=go_1711&utm_medium=email&utm_source=go_release_email&utm_content=go_release_notes&utm_term=" style="color: #94399E;">release notes</a>. </p>
+          <p>We have also made several bug fixes, API and performance enhancements. A more comprehensive list of changes can be found in our <a href="https://www.gocd.org/releases/#17.11.0?utm_campaign=go_1711&utm_medium=email&utm_source=go_release_email&utm_content=go_release_notes&utm_term=" style="color: #94399E;">release notes</a>. </p>
         </div>
         
         <div class="section" style="margin-bottom: 40px !important">
+            <p style="margin: 0 0 10px 0 !important; padding: 0; font-family: Open Sans, Segoe UI, Segoe, Segoe WP, Helvetica Neue, Roboto, Microsoft YaHei, Hiragino Sans GB, Hiragino Sans GB W3, Arial, sans-serif; line-height: normal;">
+              <span class="h3" style="color: #333; font-size: 22px; font-weight: 400; text-transform: uppercase;">BREAKING CHANGES</span>
+            </p>
+            <ul style="padding-left: 0px">
+              <li style="font-family: Open Sans, Segoe UI, Segoe, Segoe WP, Helvetica Neue, Roboto, Microsoft YaHei, Hiragino Sans GB, Hiragino Sans GB W3, Arial, sans-serif;list-style: none;border: 1px solid;border-color: #4AD9D9;padding: 12px;margin-bottom: 16px;margin-left: 0px;">We have moved over to <a href ="https://github.com/gocd/gocd/commit/f501efc5a00519461fdf7d93081f83fcca7df2b9" style= "color: #94399E;">logback from log4j</a> for logging. GoCD will no longer honour log4j.properties file. Users managing log4j.properties file externally would have to update their scripts to use the logback.xml instead. 
+              </li>
+              <li style="font-family: Open Sans, Segoe UI, Segoe, Segoe WP, Helvetica Neue, Roboto, Microsoft YaHei, Hiragino Sans GB, Hiragino Sans GB W3, Arial, sans-serif;list-style: none;border: 1px solid;border-color: #4AD9D9;padding: 12px;margin-bottom: 16px;margin-left: 0px;">Support for phusion based docker <a href ="https://hub.docker.com/r/gocd/gocd-server-deprecated/" style= "color: #94399E;">server</a> and <a href ="https://hub.docker.com/r/gocd/gocd-agent-deprecated/" style= "color: #94399E;">agent</a> images have been removed this release. We provide support for the docker images for GoCD agents across the following operating systems - Alpine 3.5, CentOS 6 & 7 , Debian 7 & 8, Ubuntu 12.04, 14.04 & 16.04. 
+                </li>
+            </ul>
+          </div>
+        
+          <div class="section" style="margin-bottom: 40px !important">
             <p style="margin: 0 0 10px 0 !important; padding: 0; font-family: Open Sans, Segoe UI, Segoe, Segoe WP, Helvetica Neue, Roboto, Microsoft YaHei, Hiragino Sans GB, Hiragino Sans GB W3, Arial, sans-serif; line-height: normal;">
               <span class="h3" style="color: #333; font-size: 22px; font-weight: 400; text-transform: uppercase;">Deprecations</span>
             </p>

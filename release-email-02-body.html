@@ -20,7 +20,7 @@
       <td>
         <div class="button-container" style="text-align: left;">
           <div class="button" style="padding: 0px; margin: 0px; font-family: &quot;Open Sans&quot;, &quot;Segoe UI&quot;, Segoe, &quot;Segoe WP&quot;, &quot;Helvetica Neue&quot;, Roboto, &quot;Microsoft YaHei&quot;, &quot;Hiragino Sans GB&quot;, &quot;Hiragino Sans GB W3&quot;, Arial, sans-serif; line-height: normal; text-align: center;">
-            <a style="background-color: #94399e; border: none;border-radius: 0px;color: #eee !important;display: inline-block;font-weight: normal;line-height: 50px;padding: 0px 25px 0px 25px;text-align: center;text-decoration: none; letter-spacing: 2px;" href="https://www.gocd.org/download/?utm_campaign=go_1711&utm_medium=email&utm_source=go_release_email&utm_content=go_download&utm_term=">DOWNLOAD GoCD 17.11</a>
+            <a style="background-color: #94399e; border: none;border-radius: 0px;color: #eee !important;display: inline-block;font-weight: normal;line-height: 50px;padding: 0px 25px 0px 25px;text-align: center;text-decoration: none; letter-spacing: 2px;" href="https://www.gocd.org/download/?utm_campaign=go_1801&utm_medium=email&utm_source=go_release_email&utm_content=go_download&utm_term=">DOWNLOAD GoCD 18.1</a>
           </div>
         </div>
       </td>
@@ -37,38 +37,33 @@
       <td>
 
         <div class="section" style="margin-bottom: 40px !important">
-          <p style="margin: 0 0 10px 0 !important; padding: 0; font-weight: 400 !important; line-height: 25px !important; font-family: Open Sans, Segoe UI, Segoe, Segoe WP, Helvetica Neue, Roboto, Microsoft YaHei, Hiragino Sans GB, Hiragino Sans GB W3, Arial, sans-serif;">
-            <span class="h3" style="color: #292929; font-size: 22px; font-weight: 400; text-transform: uppercase;">UX Enhancements  
-            </span>
-          </p>
-          <p>We have made it easier to find the Value Stream Map (VSM) for your pipeline. Pipeline instances now have an explict link to VSM across the application for better discoverability. Also, pipeline run durations are now visible in the VSM. 
-          <br/><br/>
-            <img src="https://www.gocd.org/assets/images/releases/17.11.0/vsm-explicit-link-dashboard-ca369c86.png" alt = "VSM Eplicitly called out on Dashboard" width="550">
-            <br/><br/>
-            <img src="https://www.gocd.org/assets/images/releases/17.11.0/pipeline-run-duration-in-vsm-4d3bffed.png" alt = "VSM Eplicitly called out on Dashboard" width="550">
- 
-          </p>
-        </div>
-
-        <div class="section" style="margin-bottom: 40px !important">
           <p style="margin: 0 0 10px 0 !important; padding: 0; font-family: Open Sans, Segoe UI, Segoe, Segoe WP, Helvetica Neue, Roboto, Microsoft YaHei, Hiragino Sans GB, Hiragino Sans GB W3, Arial, sans-serif; line-height: normal;">
-            <span class="h3" style="color: #333; font-size: 22px; font-weight: 400">OTHER CHANGES</span>
+              <span class="h3" style="color: #333; font-size: 22px; font-weight: 400; text-transform: uppercase;">Bug Fixes and Enhancements</span>
           </p>
-          <p>We've made a few improvements to GoCD 17.11 like adding support for bitbucket & gitlab webhooks and support for parameters & template references in config-repo pipelines (pipeline as code). </p>
+          <p>We've made a few bug fixes in GoCD 18.1. We've also updated the GoCD Server and Agent docker image for the <a href="https://hub.docker.com/r/gocd/gocd-agent-alpine-3.7/" style="color: #94399E;"></a>latest version of Alpine </a></p> 
           <br/>
-          <p>We've made a few changes to the <a href="https://github.com/gocd/docker-gocd-server/blob/master/CHANGELOG.md#docker-gocd-server-17110" style="color: #94399E;">GoCD Server</a> and the <a href="https://github.com/gocd/docker-gocd-agent/blob/master/CHANGELOG.md#docker-gocd-agent-17110" style="color: #94399E;">GoCD Agent</a> Docker images.</p> 
-          <br/>
-          <p>We have also made several bug fixes, API and performance enhancements. A more comprehensive list of changes can be found in our <a href="https://www.gocd.org/releases/#17.11.0?utm_campaign=go_1711&utm_medium=email&utm_source=go_release_email&utm_content=go_release_notes&utm_term=" style="color: #94399E;">release notes</a>. </p>
+          <p>A more comprehensive list of changes can be found in our <a href="https://www.gocd.org/releases/#18.1.0?utm_campaign=go_1801&utm_medium=email&utm_source=go_release_email&utm_content=go_release_notes&utm_term=" style="color: #94399E;">release notes</a>. </p>
         </div>
         
         <div class="section" style="margin-bottom: 40px !important">
             <p style="margin: 0 0 10px 0 !important; padding: 0; font-family: Open Sans, Segoe UI, Segoe, Segoe WP, Helvetica Neue, Roboto, Microsoft YaHei, Hiragino Sans GB, Hiragino Sans GB W3, Arial, sans-serif; line-height: normal;">
-              <span class="h3" style="color: #333; font-size: 22px; font-weight: 400; text-transform: uppercase;">BREAKING CHANGES</span>
+              <span class="h3" style="color: #333; font-size: 22px; font-weight: 400; text-transform: uppercase;">Breaking Changes</span>
             </p>
             <ul style="padding-left: 0px">
-              <li style="font-family: Open Sans, Segoe UI, Segoe, Segoe WP, Helvetica Neue, Roboto, Microsoft YaHei, Hiragino Sans GB, Hiragino Sans GB W3, Arial, sans-serif;list-style: none;border: 1px solid;border-color: #4AD9D9;padding: 12px;margin-bottom: 16px;margin-left: 0px;">We have moved over to <a href ="https://github.com/gocd/gocd/commit/f501efc5a00519461fdf7d93081f83fcca7df2b9" style= "color: #94399E;">logback from log4j</a> for logging. GoCD will no longer honour log4j.properties file. Users managing log4j.properties file externally would have to update their scripts to use the logback.xml instead. 
+              <li style="font-family: Open Sans, Segoe UI, Segoe, Segoe WP, Helvetica Neue, Roboto, Microsoft YaHei, Hiragino Sans GB, Hiragino Sans GB W3, Arial, sans-serif;list-style: none;border: 1px solid;border-color: #4AD9D9;padding: 12px;margin-bottom: 16px;margin-left: 0px;">As of release 17.5, authentication plugin endpoints have been deprecated. Support for authentication plugin endpoints has been removed in 18.1 release. The following plugins will not work unless been migrated to use the <a href ="https://plugin-api.gocd.org/current/authorization/" style= "color: #94399E;">Authorization Plugins</a> endpoint:
+                <ul>
+                  <li>Google OAuth Login</li>
+                  <li>GitHub OAuth Login</li>
+                  <li>GitLab(CE) OAuth Login</li>
+                  <li>TLS Client Certificates Login</li>
+                  <li>Strong Auth Plugin</li>
+                  <li>Guest Login</li>
+                </ul>    
+                To get a complete list of alternatives for the deprecated plugins, visit our <a href ="https://www.gocd.org/releases/#18.1.0?utm_campaign=go_1801&utm_medium=email&utm_source=go_release_email&utm_content=go_release_notes&utm_term=" style= "color: #94399E;">release notes</a>.          
               </li>
-              <li style="font-family: Open Sans, Segoe UI, Segoe, Segoe WP, Helvetica Neue, Roboto, Microsoft YaHei, Hiragino Sans GB, Hiragino Sans GB W3, Arial, sans-serif;list-style: none;border: 1px solid;border-color: #4AD9D9;padding: 12px;margin-bottom: 16px;margin-left: 0px;">Support for phusion based docker <a href ="https://hub.docker.com/r/gocd/gocd-server-deprecated/" style= "color: #94399E;">server</a> and <a href ="https://hub.docker.com/r/gocd/gocd-agent-deprecated/" style= "color: #94399E;">agent</a> images have been removed this release. We provide support for the docker images for GoCD agents across the following operating systems - Alpine 3.5, CentOS 6 & 7 , Debian 7 & 8, Ubuntu 12.04, 14.04 & 16.04. 
+              <li style="font-family: Open Sans, Segoe UI, Segoe, Segoe WP, Helvetica Neue, Roboto, Microsoft YaHei, Hiragino Sans GB, Hiragino Sans GB W3, Arial, sans-serif;list-style: none;border: 1px solid;border-color: #4AD9D9;padding: 12px;margin-bottom: 16px;margin-left: 0px;"><a href ="https://github.com/gocd/gocd/issues/4219" style= "color: #94399E;">This bug fix</a>, which deletes cruft for new jobs as they complete, breaks <a href ="https://api.gocd.org/current/#get-job" style= "color: #94399E;">jobs feed API</a>. We will no longer render the environment variables, resources and build artifacts in the job xml api 
+                </li>
+                <li style="font-family: Open Sans, Segoe UI, Segoe, Segoe WP, Helvetica Neue, Roboto, Microsoft YaHei, Hiragino Sans GB, Hiragino Sans GB W3, Arial, sans-serif;list-style: none;border: 1px solid;border-color: #4AD9D9;padding: 12px;margin-bottom: 16px;margin-left: 0px;">Version 2 of the <a href ="https://api.gocd.org/current/#plugin-info" style= "color: #94399E;">plugin info API</a> which was deprecated in 17.9.0 release is removed in this release. Version 3 of the API is available.
                 </li>
             </ul>
           </div>
@@ -78,18 +73,20 @@
               <span class="h3" style="color: #333; font-size: 22px; font-weight: 400; text-transform: uppercase;">Deprecations</span>
             </p>
             <ul style="padding-left: 0px">
-              <li style="font-family: Open Sans, Segoe UI, Segoe, Segoe WP, Helvetica Neue, Roboto, Microsoft YaHei, Hiragino Sans GB, Hiragino Sans GB W3, Arial, sans-serif;list-style: none;border: 1px solid;border-color: #4AD9D9;padding: 12px;margin-bottom: 16px;margin-left: 0px;">With release 17.5.0 support for in-built password file and LDAP/AD authentication had been deprecated. In this release support for this has been removed in favour of the bundled <a href ="https://github.com/gocd/gocd-ldap-authentication-plugin" style= "color: #94399E;">LDAP</a> and <a href ="https://github.com/gocd/filebased-authentication-plugin" style= "color: #94399E;">Password File</a> plugins respectively.</li>
+              <li style="font-family: Open Sans, Segoe UI, Segoe, Segoe WP, Helvetica Neue, Roboto, Microsoft YaHei, Hiragino Sans GB, Hiragino Sans GB W3, Arial, sans-serif;list-style: none;border: 1px solid;border-color: #4AD9D9;padding: 12px;margin-bottom: 16px;margin-left: 0px;">As of release 17.11, version 1 of the users <a href="https://api.gocd.org/current/#users" style="color: #94399E;">API</a> is deprecated. This version of the API will be removed in 18.2.0 release (scheduled to be released in February 2018). Version 2 of the API is available, and users are encouraged to use it.
+                </li>
               
-              <li style="font-family: Open Sans, Segoe UI, Segoe, Segoe WP, Helvetica Neue, Roboto, Microsoft YaHei, Hiragino Sans GB, Hiragino Sans GB W3, Arial, sans-serif;list-style: none;border: 1px solid;border-color: #4AD9D9;padding: 12px;margin-bottom: 16px;margin-left: 0px;">As of release 17.5, authentication plugin endpoints have been deprecated. Support for these plugins will be removed in 18.1 (scheduled for January 2018). Plugin developers are encouraged to migrate their plugins to use the <a href ="https://plugin-api.gocd.org/current/authorization/" style= "color: #94399E;" >Authorization Plugins</a> that were introduced.</li>
+              <li style="font-family: Open Sans, Segoe UI, Segoe, Segoe WP, Helvetica Neue, Roboto, Microsoft YaHei, Hiragino Sans GB, Hiragino Sans GB W3, Arial, sans-serif;list-style: none;border: 1px solid;border-color: #4AD9D9;padding: 12px;margin-bottom: 16px;margin-left: 0px;">Plugins upload form has been removed from the new plugins page. It is still available in the old plugins page, which will be removed in release 18.2 (scheduled to be released in February 2018).
+                </li>
             </ul>
-            <p>For a complete list of features that have been deprecated on GoCD along with the timeframe of their removal, see our <a href="https://www.gocd.org/releases/#17.11.0?utm_campaign=go_1711&utm_medium=email&utm_source=go_release_email&utm_content=go_release_notes&utm_term=" style="color: #94399E;">release notes</a>.</p>
+            <p>For a complete list of features that have been deprecated on GoCD along with the timeframe of their removal, see our <a href="https://www.gocd.org/releases/#18.1.0?utm_campaign=go_1801&utm_medium=email&utm_source=go_release_email&utm_content=go_release_notes&utm_term=" style="color: #94399E;">release notes</a>.</p>
           </div>
           
               <div class="section" style="margin-bottom: 40px !important">
           <p style="margin: 0 0 10px 0 !important; padding: 0; font-family: Open Sans, Segoe UI, Segoe, Segoe WP, Helvetica Neue, Roboto, Microsoft YaHei, Hiragino Sans GB, Hiragino Sans GB W3, Arial, sans-serif; line-height: normal">
             <span class="h3" style="color: #333; font-size: 22px; font-weight: 400; text-transform: uppercase;">We love our contributors!</span>
           </p>
-          <p>Thank you Ankit Srivastava, Ankur K, Bhupendrakumar Piprava, Drew J. Sonne, Emily Luke, Ganesh S Patil, Humin Li, Isabelle Carter, Jyoti Singh, Ketan Padegaonkar, Louda Peña, Lubaina R, Mahesh Panchaksharaiah, Mikhail Advani, Naveen Bhaskar, Rajiesh N, Senthil R, stayclassychicago, Suzie Prince, Tomasz Setkowski and Varsha Varadarajan.
+          <p>Thank you Aditya Sood, Akshay Dewan, Ankit Srivastava, Ankur K, Bhupendrakumar Piprava, Emily Luke, Ganesh S Patil, Isabelle Carter, Jyoti Singh, Ketan Padegaonkar, Kiera Radman, Louda Peña, Lubaina R, Mahesh Panchaksharaiah, Marques Lee, Naveen Bhaskar, Rajiesh N, Senthil R, Tomasz Setkowski and Varsha .
           </p>
           <br />
           <p>A shout out to the <a href="https://hackerone.com/gocd/thanks" style="color: #94399E;">security researchers on hackerone</a> for contributing!</p>
@@ -112,7 +109,7 @@
 
         <div class="button-container" style="text-align: left;">
           <div class="button" style="padding: 25px; margin: 20px; font-family: &quot;Open Sans&quot;, &quot;Segoe UI&quot;, Segoe, &quot;Segoe WP&quot;, &quot;Helvetica Neue&quot;, Roboto, &quot;Microsoft YaHei&quot;, &quot;Hiragino Sans GB&quot;, &quot;Hiragino Sans GB W3&quot;, Arial, sans-serif; line-height: normal; text-align: center;">
-            <a style="background-color: #94399e; border: none;border-radius: 0px;color: #eee !important;display: inline-block;font-weight: normal;line-height: 50px;padding: 0px 25px 0px 25px; margin: 50px; text-align: center;text-decoration: none; letter-spacing: 2px;" href="https://www.gocd.org/download/?utm_campaign=go_1711&utm_medium=email&utm_source=go_release_email&utm_content=go_download&utm_term=">DOWNLOAD GoCD 17.11</a>
+            <a style="background-color: #94399e; border: none;border-radius: 0px;color: #eee !important;display: inline-block;font-weight: normal;line-height: 50px;padding: 0px 25px 0px 25px; margin: 50px; text-align: center;text-decoration: none; letter-spacing: 2px;" href="https://www.gocd.org/download/?utm_campaign=go_1801&utm_medium=email&utm_source=go_release_email&utm_content=go_download&utm_term=">DOWNLOAD GoCD 18.1</a>
           </div>
         </div>
         <hr style="height:1px; margin: 20px 0; border:none; background-color: #999999">

@@ -3,7 +3,7 @@
   <tbody>
     <tr>
       <td>
-        <a href="https://www.gocd.org/?utm_campaign=&utm_medium=&utm_source=&utm_content=go_website&utm_term=">
+        <a href="https://www.gocd.org?utm_campaign=go_1801&utm_medium=email&utm_source=go_release_email&utm_content=go_website&utm_term=">
           <img class="full-width-img--img" style="border: none; width: 100%; display: block;" src="https://info.thoughtworks.com/rs/199-QDE-291/images/799-gocd_product_announcement_email_header.jpg" alt="The latest version of GoCD, the open source continuous delivery server, is ready for download." width="550" />
         </a>
       </td>
@@ -40,7 +40,7 @@
           <p style="margin: 0 0 10px 0 !important; padding: 0; font-family: Open Sans, Segoe UI, Segoe, Segoe WP, Helvetica Neue, Roboto, Microsoft YaHei, Hiragino Sans GB, Hiragino Sans GB W3, Arial, sans-serif; line-height: normal;">
               <span class="h3" style="color: #333; font-size: 22px; font-weight: 400; text-transform: uppercase;">Bug Fixes and Enhancements</span>
           </p>
-          <p>We've made a few bug fixes in GoCD 18.1. We've also updated the GoCD Server and Agent docker image for the <a href="https://hub.docker.com/r/gocd/gocd-agent-alpine-3.7/" style="color: #94399E;"></a>latest version of Alpine </a></p> 
+          <p>We've made a few bug fixes in GoCD 18.1. We've also updated <a href="https://hub.docker.com/r/gocd/gocd-agent-alpine-3.7/" style="color: #94399E;">the GoCD Server and Agent docker image</a> for the latest version of Alpine.</p> 
           <br/>
           <p>A more comprehensive list of changes can be found in our <a href="https://www.gocd.org/releases/#18.1.0?utm_campaign=go_1801&utm_medium=email&utm_source=go_release_email&utm_content=go_release_notes&utm_term=" style="color: #94399E;">release notes</a>. </p>
         </div>
@@ -50,7 +50,7 @@
               <span class="h3" style="color: #333; font-size: 22px; font-weight: 400; text-transform: uppercase;">Breaking Changes</span>
             </p>
             <ul style="padding-left: 0px">
-              <li style="font-family: Open Sans, Segoe UI, Segoe, Segoe WP, Helvetica Neue, Roboto, Microsoft YaHei, Hiragino Sans GB, Hiragino Sans GB W3, Arial, sans-serif;list-style: none;border: 1px solid;border-color: #4AD9D9;padding: 12px;margin-bottom: 16px;margin-left: 0px;">As of release 17.5, authentication plugin endpoints have been deprecated. Support for authentication plugin endpoints has been removed in 18.1 release. The following plugins will not work unless been migrated to use the <a href ="https://plugin-api.gocd.org/current/authorization/" style= "color: #94399E;">Authorization Plugins</a> endpoint:
+              <li style="font-family: Open Sans, Segoe UI, Segoe, Segoe WP, Helvetica Neue, Roboto, Microsoft YaHei, Hiragino Sans GB, Hiragino Sans GB W3, Arial, sans-serif;list-style: none;border: 1px solid;border-color: #4AD9D9;padding: 12px;margin-bottom: 16px;margin-left: 0px;">As of release 17.5, authentication plugin endpoints have been deprecated. Support for authentication plugin endpoints has been removed in 18.1 release. The following plugins will not work unless they've been migrated to use the <a href ="https://plugin-api.gocd.org/current/authorization/" style= "color: #94399E;">Authorization Plugins</a> endpoint:
                 <ul>
                   <li>Google OAuth Login</li>
                   <li>GitHub OAuth Login</li>
@@ -61,7 +61,7 @@
                 </ul>    
                 To get a complete list of alternatives for the deprecated plugins, visit our <a href ="https://www.gocd.org/releases/#18.1.0?utm_campaign=go_1801&utm_medium=email&utm_source=go_release_email&utm_content=go_release_notes&utm_term=" style= "color: #94399E;">release notes</a>.          
               </li>
-              <li style="font-family: Open Sans, Segoe UI, Segoe, Segoe WP, Helvetica Neue, Roboto, Microsoft YaHei, Hiragino Sans GB, Hiragino Sans GB W3, Arial, sans-serif;list-style: none;border: 1px solid;border-color: #4AD9D9;padding: 12px;margin-bottom: 16px;margin-left: 0px;"><a href ="https://github.com/gocd/gocd/issues/4219" style= "color: #94399E;">This bug fix</a>, which deletes cruft for new jobs as they complete, breaks <a href ="https://api.gocd.org/current/#get-job" style= "color: #94399E;">jobs feed API</a>. We will no longer render the environment variables, resources and build artifacts in the job xml api 
+              <li style="font-family: Open Sans, Segoe UI, Segoe, Segoe WP, Helvetica Neue, Roboto, Microsoft YaHei, Hiragino Sans GB, Hiragino Sans GB W3, Arial, sans-serif;list-style: none;border: 1px solid;border-color: #4AD9D9;padding: 12px;margin-bottom: 16px;margin-left: 0px;"><a href ="https://github.com/gocd/gocd/issues/4219" style= "color: #94399E;">This bug fix</a>, which deletes cruft for new jobs as they complete, breaks <a href ="https://api.gocd.org/current/#get-job" style= "color: #94399E;">jobs feed API</a>. We will no longer render the environment variables, resources and build artifacts in the jobs feed API. 
                 </li>
                 <li style="font-family: Open Sans, Segoe UI, Segoe, Segoe WP, Helvetica Neue, Roboto, Microsoft YaHei, Hiragino Sans GB, Hiragino Sans GB W3, Arial, sans-serif;list-style: none;border: 1px solid;border-color: #4AD9D9;padding: 12px;margin-bottom: 16px;margin-left: 0px;">Version 2 of the <a href ="https://api.gocd.org/current/#plugin-info" style= "color: #94399E;">plugin info API</a> which was deprecated in 17.9.0 release is removed in this release. Version 3 of the API is available.
                 </li>

@@ -41,19 +41,25 @@
               <span class="h3" style="color: #333; font-size: 22px; font-weight: 400; text-transform: uppercase;">New Dashboard Page (Beta)</span>
           </p>
           <p>This release of GoCD ships with a 'preview' version of the new and improved dashboard page.</p> <br />
-         <img src="https://preview.gocd.org/assets/images/releases/18.2.0/new-dashboard-4720d938.png" alt="New Dashboard Page" width="550" /><br/>
+         <img src="https://www.gocd.org/assets/images/releases/18.2.0/new-dashboard-4720d938.png" alt="New Dashboard Page" width="550" /><br/>
             <p>
             This improves performance for large GoCD instances with thousands of pipelines. This new dashboard will replace the existing dashboard in one of the upcoming releases.</p>
             
           </div>
           <div class="section" style="margin-bottom: 40px !important">
           <p style="margin: 0 0 10px 0 !important; padding: 0; font-family: Open Sans, Segoe UI, Segoe, Segoe WP, Helvetica Neue, Roboto, Microsoft YaHei, Hiragino Sans GB, Hiragino Sans GB W3, Arial, sans-serif; line-height: normal;">
-            <span class="h3" style="color: #333; font-size: 22px; font-weight: 400; text-transform: uppercase;">Elastic Agent & Elastic Agent Plugin Status Reports</span>
+            <span class="h3" style="color: #333; font-size: 22px; font-weight: 400; text-transform: uppercase;">Elastic Agent Status Reports (Agent and Plugin Level)</span>
         </p>
-        <p>To make it easier to see information about your elastic agents or elastic agent cluster and check logs in case of issues, GoCD now provides <strong>two new status reports</strong> - Elastic Agent Status Report & Elastic Agent Plugin Status Report. GoCD Plugins for Docker, Docker Swarm, and Amazon ECS have implemented this status report feature.
+        <p>To make it easier to see information about your elastic agents or elastic agent cluster and check logs in case of issues, GoCD now provides <strong>two new elastic agent status reports</strong> at the Agent and Plugin levels. GoCD Plugins for Docker, Docker Swarm, and Amazon ECS have implemented this status report feature.
         </p>
-        <br/>
-          <p>We've also made bug fixes & API enhancements in GoCD 18.2. A more comprehensive list of changes can be found in our <a href="https://www.gocd.org/releases/#18.1.0?utm_campaign=go_1801&utm_medium=email&utm_source=go_release_email&utm_content=go_release_notes&utm_term=" style="color: #94399E;">release notes</a>. </p>
+        </div>
+        <div class="section" style="margin-bottom: 40px !important">
+            <p style="margin: 0 0 10px 0 !important; padding: 0; font-family: Open Sans, Segoe UI, Segoe, Segoe WP, Helvetica Neue, Roboto, Microsoft YaHei, Hiragino Sans GB, Hiragino Sans GB W3, Arial, sans-serif; line-height: normal;">
+                <span class="h3" style="color: #333; font-size: 22px; font-weight: 400; text-transform: uppercase;">Docker in Docker Image </span>
+            </p>
+            <p>We have introduced the GoCD Agent Docker in Docker image. This can be used to run docker related tasks such as building a docker image, pushing to a registry etc. Advanced use-cases include containerizing the application and running tests using DInD. You can read in detail about changes to the <a href="https://github.com/gocd/docker-gocd-server/blob/master/CHANGELOG.md" style="color: #94399E;">server</a> and <a href="https://github.com/gocd/docker-gocd-agent/blob/master/CHANGELOG.md" style="color: #94399E;">agent</a> docker images.</p>
+            <br/>
+            <p>We've also made bug fixes & API enhancements in GoCD 18.2. A more comprehensive list of changes can be found in our <a href="https://www.gocd.org/releases/#18.1.0?utm_campaign=go_1801&utm_medium=email&utm_source=go_release_email&utm_content=go_release_notes&utm_term=" style="color: #94399E;">release notes</a>. </p>
         </div>
         
         <div class="section" style="margin-bottom: 40px !important">
@@ -80,7 +86,7 @@
                 The Elastic Agent API version 1 (and a development verion 2) has been deprecated. This will be removed in 18.5 (scheduled for May 2018). Plugin developers should use version 3 of the Elastic Agent plugin API to allow adding support for agent status report and plugin status report. The Docker, Docker Swarm, and ECS plugins have been migrated to the new versions, and users should upgrade their plugins to the latest version to see these new features.
               </li>
               <li style="font-family: Open Sans, Segoe UI, Segoe, Segoe WP, Helvetica Neue, Roboto, Microsoft YaHei, Hiragino Sans GB, Hiragino Sans GB W3, Arial, sans-serif;list-style: none;border: 1px solid;border-color: #4AD9D9;padding: 12px;margin-bottom: 16px;margin-left: 0px;">
-                Plugins upload form has been removed from the new plugins page. For now, this is still available in the old plugins page, which will be removed in release 18.3 (scheduled for March 2018).
+                Plugins upload form has been removed from the new plugins page. For now, this is still available in the old plugins page, which will be removed in release 18.3.
 
               </li>
             </ul>
@@ -91,7 +97,7 @@
           <p style="margin: 0 0 10px 0 !important; padding: 0; font-family: Open Sans, Segoe UI, Segoe, Segoe WP, Helvetica Neue, Roboto, Microsoft YaHei, Hiragino Sans GB, Hiragino Sans GB W3, Arial, sans-serif; line-height: normal">
             <span class="h3" style="color: #333; font-size: 22px; font-weight: 400; text-transform: uppercase;">We love our contributors!</span>
           </p>
-          <p>Thank you Akshay Dewan, Akshay Mayekar, Ankit Srivastava, Ankur K, Aravind SV, Bhupendrakumar Piprava, Ganesh S Patil, Isabelle Carter, Jyoti Singh, Ketan Padegaonkar, Kiera Radman, Louda Peña, Lubaina R, Mahesh Panchaksharaiah, Marques Lee, Naveen Bhaskar, Rajiesh N, Senthil R and Varsha Varadarajan.
+          <p>Thank you Akshay Dewan, Akshay Mayekar, Ankit Srivastava, Ankur K, Bhupendrakumar Piprava, Ganesh S Patil, Isabelle Carter, Jyoti Singh, Ketan Padegaonkar, Kiera Radman, Louda Peña, Lubaina R, Mahesh Panchaksharaiah, Marques Lee, Naveen Bhaskar, Rajiesh N, Senthil R and Varsha Varadarajan.
           </p>
           <br />
           <p>Thanks to Charles Bryant, Christian Lövsund, Don Stewart and Paul Thomas for participating in our research study.</p>

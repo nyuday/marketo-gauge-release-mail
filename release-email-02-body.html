@@ -3,7 +3,7 @@
   <tbody>
     <tr>
       <td>
-        <a href="https://www.gocd.org?utm_campaign=go_1802&utm_medium=email&utm_source=go_release_email&utm_content=go_website&utm_term=">
+        <a href="https://www.gocd.org?utm_campaign=go_1803&utm_medium=email&utm_source=go_release_email&utm_content=go_website&utm_term=">
           <img class="full-width-img--img" style="border: none; width: 100%; display: block;" src="https://info.thoughtworks.com/rs/199-QDE-291/images/799-gocd_product_announcement_email_header.jpg" alt="The latest version of GoCD, the open source continuous delivery server, is ready for download." width="550" />
         </a>
       </td>
@@ -20,7 +20,7 @@
       <td>
         <div class="button-container" style="text-align: left;">
           <div class="button" style="padding: 0px; margin: 0px; font-family: &quot;Open Sans&quot;, &quot;Segoe UI&quot;, Segoe, &quot;Segoe WP&quot;, &quot;Helvetica Neue&quot;, Roboto, &quot;Microsoft YaHei&quot;, &quot;Hiragino Sans GB&quot;, &quot;Hiragino Sans GB W3&quot;, Arial, sans-serif; line-height: normal; text-align: center;">
-            <a style="background-color: #94399e; border: none;border-radius: 0px;color: #eee !important;display: inline-block;font-weight: normal;line-height: 50px;padding: 0px 25px 0px 25px;text-align: center;text-decoration: none; letter-spacing: 2px;" href="https://www.gocd.org/download/?utm_campaign=go_1802&utm_medium=email&utm_source=go_release_email&utm_content=go_download&utm_term=">DOWNLOAD GoCD 18.2</a>
+            <a style="background-color: #94399e; border: none;border-radius: 0px;color: #eee !important;display: inline-block;font-weight: normal;line-height: 50px;padding: 0px 25px 0px 25px;text-align: center;text-decoration: none; letter-spacing: 2px;" href="https://www.gocd.org/download/?utm_campaign=go_1803&utm_medium=email&utm_source=go_release_email&utm_content=go_download&utm_term=">DOWNLOAD GoCD 18.3</a>
           </div>
         </div>
       </td>
@@ -38,38 +38,39 @@
 
         <div class="section" style="margin-bottom: 40px !important">
           <p style="margin: 0 0 10px 0 !important; padding: 0; font-family: Open Sans, Segoe UI, Segoe, Segoe WP, Helvetica Neue, Roboto, Microsoft YaHei, Hiragino Sans GB, Hiragino Sans GB W3, Arial, sans-serif; line-height: normal;">
-              <span class="h3" style="color: #333; font-size: 22px; font-weight: 400; text-transform: uppercase;">New Dashboard Page (Beta)</span>
+              <span class="h3" style="color: #333; font-size: 22px; font-weight: 400; text-transform: uppercase;">New Dashboard out of Beta</span>
           </p>
-          <p>This release of GoCD ships with a 'preview' version of the new and improved dashboard page.</p> <br />
-         <img src="https://www.gocd.org/assets/images/releases/18.2.0/new-dashboard-4720d938.png" alt="New Dashboard Page" width="550" /><br/>
-            <p>
-            This improves performance for large GoCD instances with thousands of pipelines. This new dashboard will replace the existing dashboard in one of the upcoming releases.</p>
-            
+          <p>After the release of the beta version of the new GoCD Dashboard in 18.2, we've made fixes and performance improvements based on feedback from our users. The GoCD dashboard improves performance for large GoCD instances with thousands of pipelines. In this release, the improved dashboard will be available as the default option to all GoCD users.</p> <br />
+         <img src="https://www.gocd.org/assets/images/releases/18.3.0/new-dashboard-dd0bd431.png" alt="New Dashboard Page" width="550" /><br/>
           </div>
+
           <div class="section" style="margin-bottom: 40px !important">
           <p style="margin: 0 0 10px 0 !important; padding: 0; font-family: Open Sans, Segoe UI, Segoe, Segoe WP, Helvetica Neue, Roboto, Microsoft YaHei, Hiragino Sans GB, Hiragino Sans GB W3, Arial, sans-serif; line-height: normal;">
-            <span class="h3" style="color: #333; font-size: 22px; font-weight: 400; text-transform: uppercase;">Elastic Agent Status Reports (Agent and Plugin Level)</span>
+            <span class="h3" style="color: #333; font-size: 22px; font-weight: 400; text-transform: uppercase;">Enhancements to GoCD's Plugin Architecture</span>
         </p>
-        <p>GoCD Plugins for Docker, Docker Swarm, and Amazon ECS now provide information about your elastic agents and capability to check logs in case of issues. They also provide information about elastic agent cluster - a report about all running agents and the state of the cluster. The latest version of the elastic agent plugin API provides capability for plugin authors to implement status reports for their plugins at both Agent and Plugin levels. Elastic agent plugin authors are encouraged to implement this for their plugins - do check out the <a href= "https://plugin-api.gocd.org/18.2.0/elastic-agents/" style="color: #94399E;">documentation</a>. 
-        </p>
+        <p>This release has improvements to our plugin architecture.</p><br/>
+        <p>GoCD allows plugins to <a href="https://plugin-api.gocd.org/18.3.0/notifications/#add-server-health-messages" style="color: #94399E;">add their own</a> Error and Warning messages which shows up in GoCD application.</p><br/>
+        
+        <p>Plugins can now implement <a href="https://github.com/gocd-contrib/gocd-multi-extension-plugin-example" style="color: #94399E;">multiple extensions</a>. This will allow plugin developers to create a single plugin to support multiple extensions which complement each other.</p>
+        <br/>
+        <p>Introduction of <a href="https://plugin-api.gocd.org/18.3.0/notifications" style="color: #94399E;">Version 3</a> of Notification Extension which allows adding of a new message to <a href="https://plugin-api.gocd.org/18.3.0/notifications/#agent-status-changed" style="color: #94399E;">notify agent state</a> changes.</p>
         </div>
         <div class="section" style="margin-bottom: 40px !important">
             <p style="margin: 0 0 10px 0 !important; padding: 0; font-family: Open Sans, Segoe UI, Segoe, Segoe WP, Helvetica Neue, Roboto, Microsoft YaHei, Hiragino Sans GB, Hiragino Sans GB W3, Arial, sans-serif; line-height: normal;">
-                <span class="h3" style="color: #333; font-size: 22px; font-weight: 400; text-transform: uppercase;">Docker in Docker Image </span>
+                <span class="h3" style="color: #333; font-size: 22px; font-weight: 400; text-transform: uppercase;">Docker Images</span>
             </p>
-            <p>We have introduced the GoCD Agent Docker in Docker image. This can be used to run docker related tasks such as building a docker image, pushing to a registry etc. Advanced use-cases include containerizing the application and running tests using DInD. You can read in detail about changes to the <a href="https://github.com/gocd/docker-gocd-server/blob/master/CHANGELOG.md" style="color: #94399E;">server</a> and <a href="https://github.com/gocd/docker-gocd-agent/blob/master/CHANGELOG.md" style="color: #94399E;">agent</a> docker images.</p>
+            <p>A new Docker image GoCD Agent is available for  <a href="https://github.com/gocd/docker-gocd-agent-debian-9" style="color: #94399E;">Debian 9</a>.</p>
             <br/>
-            <p>We've also made bug fixes & API enhancements in GoCD 18.2. A more comprehensive list of changes can be found in our <a href="https://www.gocd.org/releases/#18.1.0?utm_campaign=go_1801&utm_medium=email&utm_source=go_release_email&utm_content=go_release_notes&utm_term=" style="color: #94399E;">release notes</a>. </p>
+            <ul style="padding-left: 0px">
+                <li style="font-family: Open Sans, Segoe UI, Segoe, Segoe WP, Helvetica Neue, Roboto, Microsoft YaHei, Hiragino Sans GB, Hiragino Sans GB W3, Arial, sans-serif;list-style: none;border: 1px solid;border-color: #4AD9D9;padding: 12px;margin-bottom: 16px;margin-left: 0px;">
+            We've also made other fixes and improvements in GoCD 18.3. A more comprehensive list of changes can be found in our <a href="https://www.gocd.org/releases/#18.3.0?utm_campaign=go_1803&utm_medium=email&utm_source=go_release_email&utm_content=go_release_notes&utm_term=" style="color: #94399E;">release notes</a>.</li></ul>
         </div>
         
         <div class="section" style="margin-bottom: 40px !important">
             <p style="margin: 0 0 10px 0 !important; padding: 0; font-family: Open Sans, Segoe UI, Segoe, Segoe WP, Helvetica Neue, Roboto, Microsoft YaHei, Hiragino Sans GB, Hiragino Sans GB W3, Arial, sans-serif; line-height: normal;">
               <span class="h3" style="color: #333; font-size: 22px; font-weight: 400; text-transform: uppercase;">Breaking Changes</span>
             </p>
-            <ul style="padding-left: 0px">
-              <li style="font-family: Open Sans, Segoe UI, Segoe, Segoe WP, Helvetica Neue, Roboto, Microsoft YaHei, Hiragino Sans GB, Hiragino Sans GB W3, Arial, sans-serif;list-style: none;border: 1px solid;border-color: #4AD9D9;padding: 12px;margin-bottom: 16px;margin-left: 0px;">Version 1 of the <a href="https://api.gocd.org/current/#users" style="color: #94399E;">Users API</a> has been removed. Version 2 of the API is available, and users are encouraged to use it.
-                </li>
-            </ul>
+            <p>The <a href="https://github.com/gocd/gocd/issues/4226" style="color: #94399E;">old Plugins page</a> which was deprecated in 18.2.0 has been removed</p>
           </div>
         
           <div class="section" style="margin-bottom: 40px !important">
@@ -77,31 +78,30 @@
               <span class="h3" style="color: #333; font-size: 22px; font-weight: 400; text-transform: uppercase;">Deprecations</span>
             </p>
             <ul style="padding-left: 0px">
-              <li style="font-family: Open Sans, Segoe UI, Segoe, Segoe WP, Helvetica Neue, Roboto, Microsoft YaHei, Hiragino Sans GB, Hiragino Sans GB W3, Arial, sans-serif;list-style: none;border: 1px solid;border-color: #4AD9D9;padding: 12px;margin-bottom: 16px;margin-left: 0px;">As of release 18.2 the following unversioned APIs have been deprecated and will be removed in 18.5 (scheduled for May 2018) - Pipeline <a href="https://api.gocd.org/current/#pause-a-pipeline" style="color: #94399E;">pause</a>, <a href="https://api.gocd.org/current/#unpause-a-pipeline" style="color: #94399E;">unpause</a>, <a href="https://api.gocd.org/current/#releasing-a-pipeline-lock" style="color: #94399E;">unlock</a> and <a href="https://api.gocd.org/current/#scheduling-pipelines" style="color: #94399E;">schedule</a> APIs . These APIs have been replaced with a versioned API and users are encouraged to use these instead.
+              <li style="font-family: Open Sans, Segoe UI, Segoe, Segoe WP, Helvetica Neue, Roboto, Microsoft YaHei, Hiragino Sans GB, Hiragino Sans GB W3, Arial, sans-serif;list-style: none;border: 1px solid;border-color: #4AD9D9;padding: 12px;margin-bottom: 16px;margin-left: 0px;">As of release 18.2 the following unversioned APIs have been deprecated and will be removed in June 2018 - Pipeline <a href="https://api.gocd.org/current/#pause-a-pipeline" style="color: #94399E;">pause</a>, <a href="https://api.gocd.org/current/#unpause-a-pipeline" style="color: #94399E;">unpause</a>, <a href="https://api.gocd.org/current/#releasing-a-pipeline-lock" style="color: #94399E;">unlock</a> and <a href="https://api.gocd.org/current/#scheduling-pipelines" style="color: #94399E;">schedule</a> APIs . These APIs have been replaced with a versioned API and users are encouraged to use these instead.
                 </li>
               
-              <li style="font-family: Open Sans, Segoe UI, Segoe, Segoe WP, Helvetica Neue, Roboto, Microsoft YaHei, Hiragino Sans GB, Hiragino Sans GB W3, Arial, sans-serif;list-style: none;border: 1px solid;border-color: #4AD9D9;padding: 12px;margin-bottom: 16px;margin-left: 0px;">The pipeline config API version 3 and version 4 have been deprecated and will be removed in 18.5 (scheduled for May 2018). Version 5 of the pipeline config API has been introduced to add the new pipeline unlock behavior attribute.
+              <li style="font-family: Open Sans, Segoe UI, Segoe, Segoe WP, Helvetica Neue, Roboto, Microsoft YaHei, Hiragino Sans GB, Hiragino Sans GB W3, Arial, sans-serif;list-style: none;border: 1px solid;border-color: #4AD9D9;padding: 12px;margin-bottom: 16px;margin-left: 0px;">The pipeline config API version 3 and version 4 have been deprecated and will be removed in June 2018. Version 5 of the pipeline config API has been introduced to add the new pipeline unlock behavior attribute.
                 </li>
               <li style="font-family: Open Sans, Segoe UI, Segoe, Segoe WP, Helvetica Neue, Roboto, Microsoft YaHei, Hiragino Sans GB, Hiragino Sans GB W3, Arial, sans-serif;list-style: none;border: 1px solid;border-color: #4AD9D9;padding: 12px;margin-bottom: 16px;margin-left: 0px;">
-                The Elastic Agent API version 1 (and a development verion 2) has been deprecated. This will be removed in 18.5 (scheduled for May 2018). Plugin developers should use version 3 of the Elastic Agent plugin API to allow adding support for agent status report and plugin status report. The Docker, Docker Swarm, and ECS plugins have been migrated to the new versions, and users should upgrade their plugins to the latest version to see these new features.
+                The Elastic Agent API version 1 (and a development verion 2) has been deprecated. This will be removed in June 2018. Plugin developers should use version 3 of the Elastic Agent plugin API to allow adding support for agent status report and plugin status report. The Docker, Docker Swarm, and ECS plugins have been migrated to the new versions, and users should upgrade their plugins to the latest version to see these new features.
               </li>
               <li style="font-family: Open Sans, Segoe UI, Segoe, Segoe WP, Helvetica Neue, Roboto, Microsoft YaHei, Hiragino Sans GB, Hiragino Sans GB W3, Arial, sans-serif;list-style: none;border: 1px solid;border-color: #4AD9D9;padding: 12px;margin-bottom: 16px;margin-left: 0px;">
-                Plugins upload form has been removed from the new plugins page. For now, this is still available in the old plugins page, which will be removed in release 18.3.
-
+              The <a href="https://api.gocd.org/current/#plugin-info" style="color: #94399E;">Plugin Info API</a> v3 has been deprecated as part of 18.3. This version of the API will be removed in July 2018. Version 4 of the API is available, and users are encouraged to use it.
               </li>
+              <li style="font-family: Open Sans, Segoe UI, Segoe, Segoe WP, Helvetica Neue, Roboto, Microsoft YaHei, Hiragino Sans GB, Hiragino Sans GB W3, Arial, sans-serif;list-style: none;border: 1px solid;border-color: #4AD9D9;padding: 12px;margin-bottom: 16px;margin-left: 0px;">
+                  The <a href="https://api.gocd.org/current/#plugin-info" style="color: #94399E;">Agent Docker Image for Debian 7</a> is deprecated as part of 18.3 and will be removed in May 2018. Users should upgrade to a <a href="https://github.com/gocd/docker-gocd-agent-debian-9" style="color: #94399E;">newer version</a> of the Debian image.
+                  </li>
             </ul>
-            <p>For a complete list of features that have been deprecated on GoCD along with the timeframe of their removal, see our <a href="https://www.gocd.org/releases/#18.2.0?utm_campaign=go_1802&utm_medium=email&utm_source=go_release_email&utm_content=go_release_notes&utm_term=" style="color: #94399E;">release notes</a>.</p>
           </div>
           
-              <div class="section" style="margin-bottom: 40px !important">
+          <div class="section" style="margin-bottom: 40px !important">
           <p style="margin: 0 0 10px 0 !important; padding: 0; font-family: Open Sans, Segoe UI, Segoe, Segoe WP, Helvetica Neue, Roboto, Microsoft YaHei, Hiragino Sans GB, Hiragino Sans GB W3, Arial, sans-serif; line-height: normal">
             <span class="h3" style="color: #333; font-size: 22px; font-weight: 400; text-transform: uppercase;">We love our contributors!</span>
           </p>
-          <p>Thank you Akshay Dewan, Akshay Mayekar, Ankit Srivastava, Ankur K, Bhupendrakumar Piprava, Ganesh S Patil, Isabelle Carter, Jyoti Singh, Ketan Padegaonkar, Kiera Radman, Louda Peña, Lubaina R, Mahesh Panchaksharaiah, Marques Lee, Naveen Bhaskar, Rajiesh N, Senthil R and Varsha Varadarajan.
+          <p>Thank you Aditya Sood, Akshay Dewan, Akshay Mayekar, Ankit Srivastava, Ankur K, Bhupendrakumar Piprava, Christoph Burgmer, Ganesh S Patil, Isabelle Carter, John Eismeier, Jyoti Singh, Ketan Padegaonkar, Kiera Radman, Louda Peña, Lubaina R, Mahesh Panchaksharaiah, Marques Lee, Naveen Bhaskar, Rafael Nunes, Rajiesh N, Senthil R, Steven Streisguth, Ted Timmons, Tomasz Sętkowski and Varsha Varadarajan.
           </p>
           <br />
-          <p>Thanks to Charles Bryant, Christian Lövsund, Don Stewart and Paul Thomas for participating in our research study.</p>
-          <br/>
           <p>A shout out to the <a href="https://hackerone.com/gocd/thanks" style="color: #94399E;">security researchers on hackerone</a> for contributing!</p>
         </div>
         
@@ -122,7 +122,7 @@
 
         <div class="button-container" style="text-align: left;">
           <div class="button" style="padding: 25px; margin: 20px; font-family: &quot;Open Sans&quot;, &quot;Segoe UI&quot;, Segoe, &quot;Segoe WP&quot;, &quot;Helvetica Neue&quot;, Roboto, &quot;Microsoft YaHei&quot;, &quot;Hiragino Sans GB&quot;, &quot;Hiragino Sans GB W3&quot;, Arial, sans-serif; line-height: normal; text-align: center;">
-            <a style="background-color: #94399e; border: none;border-radius: 0px;color: #eee !important;display: inline-block;font-weight: normal;line-height: 50px;padding: 0px 25px 0px 25px; margin: 50px; text-align: center;text-decoration: none; letter-spacing: 2px;" href="https://www.gocd.org/download/?utm_campaign=go_1802&utm_medium=email&utm_source=go_release_email&utm_content=go_download&utm_term=">DOWNLOAD GoCD 18.2</a>
+            <a style="background-color: #94399e; border: none;border-radius: 0px;color: #eee !important;display: inline-block;font-weight: normal;line-height: 50px;padding: 0px 25px 0px 25px; margin: 50px; text-align: center;text-decoration: none; letter-spacing: 2px;" href="https://www.gocd.org/download/?utm_campaign=go_1803&utm_medium=email&utm_source=go_release_email&utm_content=go_download&utm_term=">DOWNLOAD GoCD 18.3</a>
           </div>
         </div>
         <hr style="height:1px; margin: 20px 0; border:none; background-color: #999999">

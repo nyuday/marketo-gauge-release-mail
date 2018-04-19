@@ -59,26 +59,19 @@
             <p style="margin: 0 0 10px 0 !important; padding: 0; font-family: Open Sans, Segoe UI, Segoe, Segoe WP, Helvetica Neue, Roboto, Microsoft YaHei, Hiragino Sans GB, Hiragino Sans GB W3, Arial, sans-serif; line-height: normal;">
                 <span class="h3" style="color: #333; font-size: 22px; font-weight: 400; text-transform: uppercase;">Docker Images</span>
             </p>
-            <p>A new Docker image GoCD Agent is available for  <a href="https://github.com/gocd/docker-gocd-agent-debian-9" style="color: #94399E;">Debian 9</a>.</p>
+            <p>A new Docker image for GoCD Agent is available for  <a href="https://github.com/gocd/docker-gocd-agent-debian-9" style="color: #94399E;">Debian 9</a>.</p>
             <br/>
             <ul style="padding-left: 0px">
                 <li style="font-family: Open Sans, Segoe UI, Segoe, Segoe WP, Helvetica Neue, Roboto, Microsoft YaHei, Hiragino Sans GB, Hiragino Sans GB W3, Arial, sans-serif;list-style: none;border: 1px solid;border-color: #4AD9D9;padding: 12px;margin-bottom: 16px;margin-left: 0px;">
             We've also made other fixes and improvements in GoCD 18.3. A more comprehensive list of changes can be found in our <a href="https://www.gocd.org/releases/#18.3.0?utm_campaign=go_1803&utm_medium=email&utm_source=go_release_email&utm_content=go_release_notes&utm_term=" style="color: #94399E;">release notes</a>.</li></ul>
         </div>
         
-        <div class="section" style="margin-bottom: 40px !important">
-            <p style="margin: 0 0 10px 0 !important; padding: 0; font-family: Open Sans, Segoe UI, Segoe, Segoe WP, Helvetica Neue, Roboto, Microsoft YaHei, Hiragino Sans GB, Hiragino Sans GB W3, Arial, sans-serif; line-height: normal;">
-              <span class="h3" style="color: #333; font-size: 22px; font-weight: 400; text-transform: uppercase;">Breaking Changes</span>
-            </p>
-            <p>The <a href="https://github.com/gocd/gocd/issues/4226" style="color: #94399E;">old Plugins page</a> which was deprecated in 18.2.0 has been removed</p>
-          </div>
-        
           <div class="section" style="margin-bottom: 40px !important">
             <p style="margin: 0 0 10px 0 !important; padding: 0; font-family: Open Sans, Segoe UI, Segoe, Segoe WP, Helvetica Neue, Roboto, Microsoft YaHei, Hiragino Sans GB, Hiragino Sans GB W3, Arial, sans-serif; line-height: normal;">
               <span class="h3" style="color: #333; font-size: 22px; font-weight: 400; text-transform: uppercase;">Deprecations</span>
             </p>
             <ul style="padding-left: 0px">
-              <li style="font-family: Open Sans, Segoe UI, Segoe, Segoe WP, Helvetica Neue, Roboto, Microsoft YaHei, Hiragino Sans GB, Hiragino Sans GB W3, Arial, sans-serif;list-style: none;border: 1px solid;border-color: #4AD9D9;padding: 12px;margin-bottom: 16px;margin-left: 0px;">As of release 18.2 the following unversioned APIs have been deprecated and will be removed in June 2018 - Pipeline <a href="https://api.gocd.org/current/#pause-a-pipeline" style="color: #94399E;">pause</a>, <a href="https://api.gocd.org/current/#unpause-a-pipeline" style="color: #94399E;">unpause</a>, <a href="https://api.gocd.org/current/#releasing-a-pipeline-lock" style="color: #94399E;">unlock</a> and <a href="https://api.gocd.org/current/#scheduling-pipelines" style="color: #94399E;">schedule</a> APIs . These APIs have been replaced with a versioned API and users are encouraged to use these instead.
+              <li style="font-family: Open Sans, Segoe UI, Segoe, Segoe WP, Helvetica Neue, Roboto, Microsoft YaHei, Hiragino Sans GB, Hiragino Sans GB W3, Arial, sans-serif;list-style: none;border: 1px solid;border-color: #4AD9D9;padding: 12px;margin-bottom: 16px;margin-left: 0px;">As of release 18.2 the following unversioned APIs have been deprecated and will be removed in June 2018 - Pipeline <a href="https://api.gocd.org/18.1.0/#pause-a-pipeline" style="color: #94399E;">pause</a>, <a href="https://api.gocd.org/18.1.0/#unpause-a-pipeline" style="color: #94399E;">unpause</a>, <a href="https://api.gocd.org/18.1.0/#releasing-a-pipeline-lock" style="color: #94399E;">unlock</a> and <a href="https://api.gocd.org/18.1.0/#scheduling-pipelines" style="color: #94399E;">schedule</a> APIs . These APIs have been replaced with a versioned API and users are encouraged to use these instead.
                 </li>
               
               <li style="font-family: Open Sans, Segoe UI, Segoe, Segoe WP, Helvetica Neue, Roboto, Microsoft YaHei, Hiragino Sans GB, Hiragino Sans GB W3, Arial, sans-serif;list-style: none;border: 1px solid;border-color: #4AD9D9;padding: 12px;margin-bottom: 16px;margin-left: 0px;">The pipeline config API version 3 and version 4 have been deprecated and will be removed in June 2018. Version 5 of the pipeline config API has been introduced to add the new pipeline unlock behavior attribute.
@@ -90,7 +83,7 @@
               The <a href="https://api.gocd.org/current/#plugin-info" style="color: #94399E;">Plugin Info API</a> v3 has been deprecated as part of 18.3. This version of the API will be removed in July 2018. Version 4 of the API is available, and users are encouraged to use it.
               </li>
               <li style="font-family: Open Sans, Segoe UI, Segoe, Segoe WP, Helvetica Neue, Roboto, Microsoft YaHei, Hiragino Sans GB, Hiragino Sans GB W3, Arial, sans-serif;list-style: none;border: 1px solid;border-color: #4AD9D9;padding: 12px;margin-bottom: 16px;margin-left: 0px;">
-                  The <a href="https://api.gocd.org/current/#plugin-info" style="color: #94399E;">Agent Docker Image for Debian 7</a> is deprecated as part of 18.3 and will be removed in May 2018. Users should upgrade to a <a href="https://github.com/gocd/docker-gocd-agent-debian-9" style="color: #94399E;">newer version</a> of the Debian image.
+                  The <a href="https://github.com/gocd/docker-gocd-agent-debian-7" style="color: #94399E;">Agent Docker Image for Debian 7</a> is deprecated as part of 18.3 and will be removed in May 2018. Users should upgrade to a <a href="https://github.com/gocd/docker-gocd-agent-debian-9" style="color: #94399E;">newer version</a> of the Debian image.
                   </li>
             </ul>
           </div>

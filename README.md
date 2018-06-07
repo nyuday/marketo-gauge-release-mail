@@ -1,4 +1,4 @@
-# marketo-gocd-release-mail
+# marketo-gauge-release-mail
 
 After cloning the repo,
 
@@ -12,7 +12,7 @@ or
 3. The code from the email is here: release-email-02-body.html
 
 
-You can also see how it looks on: https://gocd.github.io/marketo-gocd-release-mail/
+You can also see how it looks on:  https://nyuday.github.io/marketo-gauge-release-mail/
 
 ## Formatting to-do's
 
